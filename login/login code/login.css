@@ -1,0 +1,173 @@
+body {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+h1,
+input,
+p {
+    margin: 0px;
+    padding: 0px;
+}
+.css-outline {
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    width: 50vw;
+    height: 50%;
+    border-radius: 13px;
+    background-color: rgb(45, 45, 45);
+    box-shadow: 0 0 5px 1px white;
+}
+.css-title-login{
+    font-size: 5vh;
+}
+.css-inputs-login { 
+    margin-top: 1em;
+    width: 45vh;
+}
+.css-input-password,
+.css-input-username { 
+    margin-bottom: 1em;
+    font-size: 3vh;
+}
+.css-login-button { 
+    margin-bottom: 0.5em;
+    width: 6em;
+    height: 2.3em;
+}
+.login-button { 
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.801);
+    border: none;
+    cursor: pointer;
+    font-size: 100%;
+}
+.css-input {
+    width: 100%;
+}
+.link {
+    color: white;
+    font-size: 3vh;
+}
+.rocket { 
+    position: absolute;
+    top: 4vh;
+    left: 28vh;
+    transform: rotate(90deg);
+
+    animation: spin 14s linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.points {
+    position: absolute;
+}
+
+@keyframes spin {
+    0% {
+        
+    }
+    34% {
+        left: 81vw;
+        top: 4vh;
+        transform: rotate(90deg);
+    }
+    40.3% {
+        left: 86vw;
+        top: 34vh;
+        transform: rotate(180deg);
+    }
+    45% {
+        top: 48vh;
+        left: 86vw;
+        transform: rotate(180deg);
+    }
+    55% {
+        top: 86vh;
+        left: 83vw;
+        transform: rotate(270deg);
+    }
+    80% {
+        transform: rotate(270deg);
+        top: 86vh;
+        left: 17vw;
+    }
+    87% {
+        top: 76vh;
+        left: 5vw;
+        transform: rotate(360deg);
+    }
+    96% {
+        transform: rotate(360deg);
+        top: 26vh;
+        left: 5vw;
+    }
+    100% {
+        top: 5vh;
+        left: 28vh;
+        transform: rotate(450deg);
+    }
+}
+
+
+
+.rocket {
+    position: absolute;
+    width: 40px;  
+    height: 50px; 
+  }
+  
+  .rocket-body {
+    position: relative;  
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;   
+    height: 40px;  
+    background-color: white;
+    border-radius: 10px 10px 50% 50%;
+  }
+  
+  .rocket-fin {
+    position: absolute;
+    bottom: 0;
+    width: 10px; 
+    height: 15px; 
+    background-color: white;
+  }
+  
+  .rocket-fin.left {
+    left: 0;
+    transform: rotate(-30deg);
+    border-radius: 10px;
+  }
+  
+  .rocket-fin.right {
+    right: 0;
+    transform: rotate(30deg);
+    border-radius: 10px;
+  }
+  
+  .rocket-fire {
+    position: absolute;
+    bottom: -20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;   
+    height: 25px;  
+    background-color: orange;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 3px rgba(255, 69, 0, 0.8);
+    opacity: 0.8;
+  }
